@@ -80,6 +80,18 @@
                     label="MOD_MENU_FIELD_NAV_ACTIVE_BACKGROUND_COLOR_LABEL"
                     description="MOD_MENU_FIELD_NAV_ACTIVE_BACKGROUND_COLOR_DESC">					
                 </field>
+                <field
+                    name="container_class"
+                    type="list"
+                    default="container"
+                    label="MOD_MENU_FIELD_CONTAINER_CLASS_LABEL"
+                    description="MOD_MENU_FIELD_CONTAINER_CLASS_DESC">
+                    <option
+                        value="container">container</option>
+                    <option
+                        value="container-fluid">container-fluid</option>
+                </field>
+         
 
                 <field
                     name="fixed"
@@ -140,6 +152,18 @@
                     default="0"
                     label="MOD_MENU_FIELD_USE_CSS_LABEL"
                     description="MOD_MENU_FIELD_USE_CSS_DESC">
+                    <option
+                        value="0">No</option>
+                    <option
+                        value="1">Yes</option>
+                </field>
+                <field
+                    name="mouse_over"
+                    type="radio"
+                    class="btn-group btn-group-yesno"
+                    default="0"
+                    label="MOD_MENU_FIELD_MOUSE_OVER_LABEL"
+                    description="MOD_MENU_FIELD_MOUSE_OVER_DESC">
                     <option
                         value="0">No</option>
                     <option

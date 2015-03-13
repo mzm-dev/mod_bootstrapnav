@@ -12,11 +12,14 @@ defined('_JEXEC') or die;
 <?php if ($use_css == 1) : ?>
     <link rel="stylesheet" href="<?php echo JURI::base(); ?>media/mod_bootstrapnav/css/bootstrap.css" type="text/css" />
 <?php endif; ?>
-<?php //print_r($list); ?>
+<?php if ($con_class == "container-fluid"): ?>
+<link rel="stylesheet" href="<?php echo JURI::base(); ?>media/mod_bootstrapnav/css/container-fixed-navbar.css" type="text/css" />
+<?php endif; ?>
 
 <?php if ($nav_type == 'navbar') : ?>    
     <nav class="navbar <?php echo $fixed; ?>  <?php echo $class_sfx; ?>" role="navigation">
-        <div class="container">
+        <!--<div class="container-fluid">-->
+        <div class="<?php echo $con_class ?>">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>

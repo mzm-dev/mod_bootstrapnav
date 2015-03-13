@@ -31,9 +31,12 @@ $brand_text 				= $params->get('brand_text');
 $brand_image 				= $params->get('brand_image');
 $use_css 					= $params->get('use_css',0);
 $mouseover 					= $params->get('mouse_over',0);
+$con_class 					= $params->get('container_class','container');
 
-if(empty($classsfx)){
+if(empty($classsfx) && ($fixed !="navbar-default")){
     $class_sfx = 'navbar-default';
+}else{
+    $class_sfx='';
 }
 
 if (count($list))
