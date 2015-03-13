@@ -19,7 +19,7 @@ $active_id 	= $active->id;
 $path		= $base->tree;
 
 $showAll					= $params->get('showAllChildren');
-$class_sfx					= htmlspecialchars($params->get('class_sfx'));
+$classsfx					= $params->get('moduleclass_sfx');
 $nav_type					= $params->get('nav_type');
 $background_color     		= $params->get('background_color','#f9f9f9');
 $text_color     			= $params->get('text_color','#333333');
@@ -30,6 +30,10 @@ $brand_type 				= $params->get('brand_type');
 $brand_text 				= $params->get('brand_text');
 $brand_image 				= $params->get('brand_image');
 $use_css 					= $params->get('use_css',0);
+
+if(empty($classsfx)){
+    $class_sfx = 'navbar-default';
+}
 
 if (count($list))
 {
