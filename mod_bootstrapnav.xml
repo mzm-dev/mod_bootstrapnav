@@ -123,19 +123,20 @@
                 </field>
 
                 <field name="brand_text" 
-                                       type="text" 
-                                       label="Brand Text"
-                                       description="Enter the text for your brand" />
+                       type="text" 
+                       label="Brand Text"
+                       description="Enter the text for your brand" />
 
                 <field name="brand_image" 
-                                       type="media" 
-                                       label="Brand Logo"
-                                       description="Upload your brand logo"
-                                       directory="stories" />
+                       type="media" 
+                       label="Brand Logo"
+                       description="Upload your brand logo"
+                       directory="stories" />
 				
                 <field
                     name="use_css"
-                    type="list"
+                    type="radio"
+                    class="btn-group btn-group-yesno"
                     default="0"
                     label="MOD_MENU_FIELD_USE_CSS_LABEL"
                     description="MOD_MENU_FIELD_USE_CSS_DESC">
