@@ -30,6 +30,7 @@ $brand_type 				= $params->get('brand_type');
 $brand_text 				= $params->get('brand_text');
 $brand_image 				= $params->get('brand_image');
 $use_css 					= $params->get('use_css',0);
+$mouseover 					= $params->get('mouse_over',0);
 
 if(empty($classsfx)){
     $class_sfx = 'navbar-default';
