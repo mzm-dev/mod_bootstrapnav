@@ -96,22 +96,22 @@ defined('_JEXEC') or die;
 <?php if ($mouseover == TRUE) { ?>
     <script>
         $(document).ready(function () {
-            $('.dropdown-toggle').mouseover(function () {
-                $('.dropdown-menu').show();
+            $('nav .dropdown-toggle').mouseover(function () {
+                $('nav .dropdown-menu').show();
             });
 
-            $('.dropdown-toggle').mouseout(function () {
+            $('nav .dropdown-toggle').mouseout(function () {
                 t = setTimeout(function () {
                     $('.dropdown-menu').hide();
                 }, 100);
 
-                $('.dropdown-menu').on('mouseenter', function () {
-                    $('.dropdown-menu').show();
+                $('nav .dropdown-menu').on('mouseenter', function () {
+                    $('nav .dropdown-menu').show();
                     clearTimeout(t);
                 }).on('mouseleave', function () {
-                    $('.dropdown-menu').hide();
+                    $('nav .dropdown-menu').hide();
                 });
             });
         });
     </script>
-<?php } ?>
+<?php } 
